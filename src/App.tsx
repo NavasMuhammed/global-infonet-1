@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BirthdayList } from "./components/bdayList";
 import jsonData from "./data/data";
+import "./App.scss"
 
 const App: React.FC = () => {
   const [year, setYear] = useState<number>(0);
