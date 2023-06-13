@@ -3,6 +3,6 @@ export interface Person {
     bday: string;
 }
 export interface BirthdayListProps {
-    year: number;
+    year: number | string;
     jsonData: Person[];
 }

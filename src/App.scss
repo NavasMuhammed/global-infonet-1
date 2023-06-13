@@ -1,0 +1,39 @@
+.form--container {
+    display: flex;
+
+    .list--container {
+        margin-right: 120px;
+        height: 300px;
+        width: 700px;
+        overflow-y: scroll;
+        background-color: #fff;
+        margin: 20px;
+    }
+    .input--container{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        >div{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        >div>input{
+            width: 300px;
+            height: 40px;
+            border: 1px solid #28323b07;
+            border-radius: 6px;
+            padding-left: 10px;
+        }
+        button{
+            width: 100px;
+            height: 35px;
+            background: #2d7dc3;
+            border: 1px solid #28323b;
+            border-radius: 6%;
+            color: #fff;
+            font-weight: bolder;
+        }
+    }
+}
