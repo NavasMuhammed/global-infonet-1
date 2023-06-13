@@ -4,7 +4,7 @@ const jsonData = [
         bday: '01/05/1990',
     },
     {
-        name: 'navas',
+        name: 'navas muhammed',
         bday: '11/05/2000',
     },
     {
