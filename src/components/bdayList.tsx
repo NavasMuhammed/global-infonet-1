@@ -1,13 +1,5 @@
 import { useState, useEffect } from "react";
-
-interface Person {
-    name: string;
-    bday: string;
-}
-interface BirthdayListProps {
-    year: number;
-    jsonData: Person[];
-}
+import { BirthdayListProps } from "../types/types";
 
 export const BirthdayList: React.FC<BirthdayListProps> = ({ year, jsonData }) => {
     const [birthdaysByDay, setBirthdaysByDay] = useState<Record<string, string[]>>({});
@@ -54,6 +46,7 @@ export const BirthdayList: React.FC<BirthdayListProps> = ({ year, jsonData }) =>
             'Friday',
             'Saturday',
         ];
+        //returns the day based on the date provided
         return daysOfWeek[date.getDay()];
     }
 
