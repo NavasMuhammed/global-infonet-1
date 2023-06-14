@@ -17,6 +17,7 @@ const App: React.FC = () => {
   const formattedJson = JSON.stringify(jsonData, null, 50);
 
   const handleYearChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setShowBirthdays(false);
     const inputValue = e.target.value.trim();
     if (inputValue === "") {
       setInputYear("");
